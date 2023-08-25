@@ -1,0 +1,101 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(95, 158, 160);
+    font-size: 1.25rem;
+}
+
+.container-fluid {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.row {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.playArea {
+    position: relative;
+    height: 80%;
+}
+
+.titleScore {
+    height: 10%;
+}
+
+.col > .row {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.playArea > .col {
+    position: relative;
+    height: 100%;
+}
+
+.playTile {
+    position: relative;
+    height: 33.33%;
+    border: 2px solid rgb(93, 151, 153);
+}
+
+.gameTile {
+    position: relative;
+    height: 50%;
+    /* border: 2px solid rgb(93, 151, 153); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gameTile > i {
+    font-size: 20rem;
+}
+
+.playTile > i {
+    font-size: 10rem;
+    color: rgb(93, 151, 153);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 255px;
+    height: 255px;
+    margin: auto;
+}
+
+.ai:not(:last-child) > i {
+    transform: scaleX(-1);
+}
+
+.player:last-child > i {
+    transform: scaleX(-1) rotate(90deg);
+}
+
+.player:hover,
+.player > i:hover {
+    color: rgb(75, 128, 129);
+    border-color: rgb(75, 128, 129);
+}
+
+.playTile .highlight,
+.highlight {
+    color: rgb(75, 128, 129);
+    border-color: rgb(75, 128, 129);
+}
+
+.startBtn {
+    width: 100px;
+    height: auto;
+    padding: .25rem;
+    margin: auto;
+    border: 1px solid black;
+    border-radius: 10px;
+}
